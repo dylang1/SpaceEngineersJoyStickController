@@ -18,20 +18,12 @@ namespace JoystickController {
         public void Dispose() {
             //do Nothing 
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="gameInstance"></param>
         public void Init(object gameInstance) {
             try {
-
-
                 Dictionary<string, string> configPairs = loadConfigFile();
                 setUpControls(configPairs);
             } catch( Exception e ) {
                 throw new Exception("Error occured during loading of configuration please double check the config is valid ");
-
             }
         }
 
